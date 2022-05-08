@@ -1,0 +1,5 @@
+var valor1 = prompt ("ingrese un primer valor")
+var valor2 = prompt ("ingrese un segundo valor")
+var resultado = (parseInt(valor1)+ parseInt(valor2))
+console.log(resultado)
+alert ("el resultado es:" +resultado)
