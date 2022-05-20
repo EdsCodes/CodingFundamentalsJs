@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Atributo que configura el idioma del documento-->
+<head>
+    <meta charset="UTF-8"> <!--atributo que declara la codificacion de caracteres de la pagina-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola :), este es el valor que debes cancelar según tu consumo de energia.</title>
+</head>
+    <body>
+        <script>
+         
+            alert("Toppings disponibles: oreo, KitKat, brownie, lacasitos, sin topping")
+
+            var topping = prompt("selecciona el topping que quieres con tu helado").toLowerCase()
+            var precio = 1.90
+
+            if(topping === "oreo"){
+            precio = precio + 1
+            alert("Usted escogio oreo, su precio a pagar es," + precio)
+                }
+
+            else if(topping === "KitKat"){
+            precio = precio + 1.50
+            alert("Usted escogio KitKat, su precio a pagar es," + precio)
+            }
+
+            else if(topping === "brownie"){
+            precio = precio + 0.75
+            alert("Usted escogio oreo, su precio a pagar es," + precio)
+            }
+
+            else if(topping === "lacasitos"){
+            precio = precio + 0.95
+            alert("Usted escogio lacasitos, su precio a pagar es," + precio)
+            }
+
+            else if(topping === "sin topping"){
+                precio = precio
+                alert("Usted escogio Sin topping, su precio a pagar es" +precio)
+            }
+
+            else{
+                alert("lo sentimos, no tenemos el topping seleccionado, el precio a pagar es:" +precio)
+            }
+            switch(topping){
+                
+            }
+        
+        </script>
+    </body>
+</head>
