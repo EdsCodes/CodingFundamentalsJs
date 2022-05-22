@@ -1,0 +1,32 @@
+<!--Escribe un script el cual nos deje introducir la cantidad y nombre de materias y la cantidad de examenes de cada una y luego introducir la nota de cada examen de manera individual. Al final el programa nos tiene que devolver el promedio de las notas por materia con sus respectivos nombres. (El usuario no puede ingresar notas negativas, ni mayores a 10)-->
+
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola, esta es una practica de ciclos y sus utilidades.</title>
+</head>
+    <body> 
+       <script>
+
+    let numeroMaterias=prompt("ingrese la cantidad de materias a evaluar");
+    let materias = [];
+    let cantidadExamenes = [];
+    let nota = 0;
+    let totalPromedio = [];
+
+        for(i=1;i<=numeroMaterias;i++){
+          materias.push(prompt(`ingrese el nombre de la materia No. ${i} a evaluar`));
+          cantidadExamenes.push(prompt(`Ingrese la cantidad de examenes para la materia ${materias[i-1]}`));
+            for(j=1;j<=cantidadExamenes;j++){
+                nota = nota.tofixed(2) + (parseFloat(prompt(`ingrese la nota del examen No. ${j} de la materia ${materias[i-1]}`)));
+            }
+            totalPromedio.push(nota/cantidadExamenes.length); //length: contabiliza la cantidad de datos q ingresaron en el array. Da el tamaño del arreglo
+        } 
+    alert(totalPromedio)
+        
+        </script>       
+    </body>
+</head>
