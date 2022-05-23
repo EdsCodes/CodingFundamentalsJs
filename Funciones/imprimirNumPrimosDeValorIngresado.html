@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir en console.log numeros primos de un valor ingresado.</title>
+</head>
+    <body>
+        <script>
+        
+        let numero = parseInt(prompt("ingrese el valor para analizar sus numeros primos"));
+        
+ function esPrimo(numero) {
+        for(i = 2,raiz=Math.sqrt(numero); i <= raiz; i++);
+        if(numero % i === 0) return false;
+    return numero > 1;
+    }  
+
+for (let x=1;x<=numero;x++) {
+    if (esPrimo(x));
+        console.log("El número " + x + " es primo");
+}
+        </script>       
+    </body> 
+</head>
