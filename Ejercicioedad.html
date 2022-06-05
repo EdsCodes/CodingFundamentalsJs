@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <H1>Ejemplo de calculo de la edad a partir de la fecha de nacimiento</H1>
+Ingrese por favor su fecha de nacimiento:
+  <input type="date" name="user_date" id="user_date">
+  <button type="button" onclick="calculateAge()">validar</button><p id ="result">Resultado:</p>
+
+  <script>   
+    function calculateAge() {
+      var d = document.getElementById("user_date").value;
+      var inDate = new Date(d);
+      var anio = inDate.getFullYear();
+      var fec_actual = new Date();
+      var fec_anio = fec_actual.getFullYear();
+      var edad = fec_anio - anio;
+      if (edad >= 18 && edad <= 79){
+        document.getElementById("result").innerHTML = "su edad es:" + edad +  "usted es apto para conducir";
+      }else {
+     document.getElementById("result").innerHTML = "Lo sentimos, no puede conducir";
+    }
+    }
+  </script>
+</body>
+</html>
