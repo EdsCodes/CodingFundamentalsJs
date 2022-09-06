@@ -30,16 +30,67 @@ CSS display:
 para entender a profundidad CSS flexbox: css-tricks.com
  */
 
-h1 {
-    color: blue;
-    width: 150px;
-    height: 37px;
-    background-color: lightgoldenrodyellow;
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #1d9168;
 }
 
-#seleccionar-mascota {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+ #seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.titulo {
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    color: #ffaf01;
+}
+
+.subtitulo {
+    color: #FFD371;
+    font-size: 32px;
+}
+
+  .tarjetas {
+      display: flex;
+      gap: 20px;
+      color: #0e000ba0;
+    }
+
+  .tarjeta-de-kopenom {
+    width: 280;
+    height: 200px;
+    background: #FFD371;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    color: #1d9168;
+  }
+
+  .tarjeta_de_kopenom img {
+      width: 10 px;
+      height: 10 px;
+      color:whitesmoke;
+      
+  }
+
+  #boton-seleccionar {
+    background: transparent;
+    width: 260px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;;
+  }
+
+  input {
+     display: none
   }
