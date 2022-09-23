@@ -1,21 +1,16 @@
 /* NOTAS: En css hay varias formas de selectores:
-
 Selector de titulo. Ejemplo:
 h1 {
     color: blue
 }
-
 Selector de clase. Ejemplo:
 .title {
     color: blue
 }
-
 Selector de id. Ejemplo:
-
 #titulo {
     color: red
 }
-
 /* las caracteristicas se refieren a el ancho, alto de los elementos y se codifican en ingles
 
 cssreference.io (recurso para conocer mas acerca de css)
@@ -26,15 +21,14 @@ CSS display:
  in-line
  block
  in-line block
-
 para entender a profundidad CSS flexbox: css-tricks.com
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
 
 body {
     font-family: 'Fredoka One', cursive;
-    background-color: #1d9168;
+    background-color: #041C32;
 }
 
  #seleccionar-mascota {
@@ -57,39 +51,52 @@ body {
 
   .tarjetas {
       display: flex;
-      gap: 20px;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;    
       color: #0e000ba0;
+      width: 20px;
     }
 
   .tarjeta-de-kopenom {
-    width: 280;
+    width: 1500px;
     height: 200px;
-    background: #FFD371;
-    padding: 20px;
+    background: #064663;
+    padding: 30px;
     box-sizing: border-box;
-    margin: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 5px solid #ECB339;
+    border-radius: 10px;
+    color: #ECB365;
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    color: #1d9168;
+
+
   }
 
-  .tarjeta_de_kopenom img {
-      width: 10 px;
-      height: 10 px;
-      color:whitesmoke;
-      
-  }
+  .tarjeta-de-kopenom img {
+      width: 120px;
+      font-family: 'Poppins', sans-serif;
+ }
 
   #boton-seleccionar {
     background: transparent;
-    width: 260px;
+    width: 200px;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 50px;
     background: transparent;
-    color: white;
-    font-family: 'Poppins', sans-serif;;
-  }
+    color: #ECB365;
+    font-family: 'Poppins', sans-serif;
+    background: #2079b0;
+    background-image: -webkit-linear-gradient(top, #2079b0, #064663);
+    background-image: -moz-linear-gradient(top, #2079b0, #064663);
+    background-image: -ms-linear-gradient(top, #2079b0, #064663);
+    background-image: -o-linear-gradient(top, #2079b0, #064663);
+    background-image: linear-gradient(to bottom, #2079b0, #ffffff);
+    text-decoration: none;
+    background-color: #008CBA;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
 
   input {
      display: none
