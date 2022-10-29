@@ -34,7 +34,7 @@ function seleccionarMascotaJugador(){
     sectionSeleccionarMascota.style.display = 'none'
     
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    sectionSeleccionarAtaque.style.display = 'block'
+    sectionSeleccionarAtaque.style.display = 'flex'
 
     let inputWaterpunch = document.getElementById('Waterpunch');
     let inputTerrahit = document.getElementById('Terrahit');

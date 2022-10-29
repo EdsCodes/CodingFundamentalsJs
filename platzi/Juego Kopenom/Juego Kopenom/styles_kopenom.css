@@ -25,10 +25,14 @@ para entender a profundidad CSS flexbox: css-tricks.com
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
-
+ 
 body {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', 'cursive';
     background-color: #041C32;
+    
+    font-family: 'Russo One', sans-serif;
+    background-image: url(./fondo.jpg);
+    background-size: cover;
 }
 
  #seleccionar-mascota {
@@ -59,45 +63,45 @@ body {
     }
 
   .tarjeta-de-kopenom {
-    width: 1500px;
-    height: 200px;
-    background: #064663;
-    padding: 30px;
-    box-sizing: border-box;
-    border: 5px solid #ECB339;
-    border-radius: 10px;
-    color: #ECB365;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-
-
+      width: 1500px;
+      height: 200px;
+      background: #064663;
+      padding: 30px;
+      box-sizing: border-box;
+      border: 5px solid #ECB339;
+      border-radius: 10px;
+      color: #ECB365;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-content: center;
+      flex-wrap: nowrap;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
   }
-
+  
   .tarjeta-de-kopenom img {
-      width: 120px;
+      width: 100px;
       font-family: 'Poppins', sans-serif;
  }
 
   #boton-seleccionar {
-    background: transparent;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    background: transparent;
-    color: #ECB365;
-    font-family: 'Poppins', sans-serif;
-    background: #2079b0;
-    background-image: -webkit-linear-gradient(top, #2079b0, #064663);
-    background-image: -moz-linear-gradient(top, #2079b0, #064663);
-    background-image: -ms-linear-gradient(top, #2079b0, #064663);
-    background-image: -o-linear-gradient(top, #2079b0, #064663);
-    background-image: linear-gradient(to bottom, #2079b0, #ffffff);
-    text-decoration: none;
-    background-color: #008CBA;
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-family: 'poppins';
+    margin-top: 30px;
 }
 
   input {
      display: none
   }
+
+  #seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+    
+}
